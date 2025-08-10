@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=heading%>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%=heading%>
+    </h1>
+    <form action="/new" method="post">
+        <div class="message-form-input">
+            <label for="author-name">Author's name: </label>
+            <input type="text" id="author-name" name="authorName">
+        </div>
+        <div class="message-form-input">
+            <label for="message-text">Message text: </label>
+            <textarea type="text" id="message-text" name="messageText"></textarea>
+        </div>
+        <button>Send</button>
+    </form>
+</body>
+
+</html>
