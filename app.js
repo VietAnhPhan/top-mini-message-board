@@ -16,4 +16,6 @@ app.use("/new", sendingMessageRouter);
 app.use("/messages", messageRouter);
 
 const PORT = 8080;
-app.listen(PORT, () => console.log(`Mini message board run on PORT: ${PORT}`));
+app.listen(PORT, "::", () =>
+  console.log(`Mini message board run on PORT: ${PORT}`)
+);
