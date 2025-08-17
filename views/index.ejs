@@ -15,15 +15,15 @@
     </h1>
     <a href="/new">New</a>
     <% messages.forEach((message, index)=> { %>
-        <p>User: <%=message.user%>
+        <p>User: <%=message.username%>
         </p>
-        <p>Text: <%=message.text%>
+        <p>Text: <%=message.text_message%>
         </p>
-        <p>Date: <%=message.added%>
+        <p>Date: <%=message.date_sent%>
         </p>
 
 
-        <a href=<%=`/messages/${index}` %>>View message</a>
+        <a href=<%=`/messages/${message.id}` %>>View message</a>
         <%}); %>
 </body>
 

@@ -1,5 +1,7 @@
 const express = require("express");
 const messages = require("../db");
+const indexController = require("../controllers/indexController");
+
 const indexRouter = express.Router();
 
 // const messages = [
@@ -15,8 +17,6 @@ const indexRouter = express.Router();
 //   },
 // ];
 
-indexRouter.get("/", (req, res) =>
-  res.render("index", { title: "Mini Message Board", messages: messages })
-);
+indexRouter.get("/", indexController.getAllMessages);
 
 module.exports = indexRouter;
